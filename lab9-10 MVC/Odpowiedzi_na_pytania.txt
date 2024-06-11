@@ -1,0 +1,53 @@
+1. Do czego służą poszczególne warstwy architektury MVC i jak są połączone?
+
+a) Model: Reprezentuje dane i logikę biznesową aplikacji. Modele są odpowiedzialne za pobieranie danych z bazy danych, ich przetwarzanie oraz zarządzanie stanem aplikacji.
+
+b) View (Widok): Odpowiada za prezentację danych użytkownikowi. Widoki generują interfejs użytkownika na podstawie danych przekazanych przez kontroler.
+
+c) Controller (Kontroler): Odpowiada za odbieranie żądań od użytkownika, przetwarzanie ich oraz zwracanie odpowiednich widoków lub wyników. Kontroler przetwarza dane z modeli i przekazuje je do widoków.
+
+Połączenie warstw:
+Kontroler odbiera żądania użytkownika, korzysta z modeli do przetwarzania danych, a następnie przekazuje wyniki do widoków, które generują odpowiedź do użytkownika.
+
+2. Jakie są konwencję nazewnictwa dla: (i) modeli, (ii) kontrolerów, (iii) akcji kontrolera, (iv) widoków, (v) folderów widoków?
+
+a) Modele: Konwencja nazewnictwa dla modeli to zazwyczaj rzeczy w liczbie pojedynczej, np. User, Product, Order.
+
+b) Kontrolery: Nazwy kontrolerów kończą się na Controller, np. HomeController, AccountController.
+
+c) Akcje kontrolera: Nazwy akcji kontrolera to czynnosci opisujące operację, np. Index, Details, Create, Edit, Delete.
+
+d) Widoki: Nazwy widoków zazwyczaj odpowiadają nazwom akcji kontrolera, dla których są tworzone, np. Index.cshtml, Details.cshtml.
+
+e) Foldery widoków: Foldery widoków są zorganizowane według nazw kontrolerów, np. widoki dla HomeController będą w folderze Views/Home.
+
+3. Jak dane przekazywane są z kontrolerów do widoków (podaj 2 opcje)?
+
+a) ViewData: To słownik, który umożliwia przekazywanie danych z kontrolera do widoku. Dane są przekazywane jako klucz-wartość.
+
+b) Model: Kontroler może przekazać dane bezpośrednio do widoku za pomocą modelu. Widok otrzymuje obiekt modelu jako argument.
+
+4. Jak mapowane są URLs na akcje kontrolerów?
+
+Mapowanie URLi na akcje kontrolerów jest realizowane przez mechanizm routingu ASP.NET Core. Domyślny routing używa wzorca {controller}/{action}/{id?}, gdzie:
+
+{controller}: Nazwa kontrolera
+{action}: Nazwa akcji kontrolera
+{id?}: Opcjonalny parametr ID
+Przykład:
+
+URL http://example.com/Home/Index jest mapowany na metodę Index w HomeController.
+URL http://example.com/Products/Details/5 jest mapowany na metodę Details w ProductsController z parametrem ID równym 5.
+
+5. Jak ograniczać akcje kontrolera tak by były uruchamiane tylko z użyciem wskazanych typów zapytań HTTP (np. ograniczenie do HTTP POST)?
+Można użyć atrybutów akcji kontrolera do ograniczenia go do określonych zapytań:
+
+[HttpGet]: Ogranicza akcję do zapytań GET.
+[HttpPost]: Ogranicza akcję do zapytań POST.
+[HttpPut]: Ogranicza akcję do zapytań PUT.
+[HttpDelete]: Ogranicza akcję do zapytań DELETE.
+
+6. Gdzie zdefiniowana jest walidacja danych i jak realizowana jest w widokach i kontrolerach?
+
+Walidacja danych jest definiowana w modelach za pomocą atrybutów walidacji. Sprawdzana jest automatycznie przez model binder ASP.NET Core.
+Do sprawdzenia poprawności używamy 'ModelState.IsValid'. W widokach natomiast używamy pomocników HTML, takich jak: 'Html.ValidationMessageFor' i 'Html.ValidationSummary'

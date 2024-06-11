@@ -1,0 +1,44 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PAI_lab8
+build_property.RootNamespace = PAI_lab8
+build_property.ProjectDir = C:\Users\Mateusz Rzepka\Desktop\Aplikacje Webowe\lab8 ASP.NET\PAI_lab8\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Mateusz Rzepka\Desktop\Aplikacje Webowe\lab8 ASP.NET\PAI_lab8
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Mateusz Rzepka/Desktop/Aplikacje Webowe/lab8 ASP.NET/PAI_lab8/Pages/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mateusz Rzepka/Desktop/Aplikacje Webowe/lab8 ASP.NET/PAI_lab8/Pages/Name.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmFtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mateusz Rzepka/Desktop/Aplikacje Webowe/lab8 ASP.NET/PAI_lab8/Pages/Rules.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUnVsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mateusz Rzepka/Desktop/Aplikacje Webowe/lab8 ASP.NET/PAI_lab8/Suits/Mark3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3VpdHNcTWFyazMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mateusz Rzepka/Desktop/Aplikacje Webowe/lab8 ASP.NET/PAI_lab8/Suits/Mark6.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3VpdHNcTWFyazYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mateusz Rzepka/Desktop/Aplikacje Webowe/lab8 ASP.NET/PAI_lab8/Suits/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3VpdHNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mateusz Rzepka/Desktop/Aplikacje Webowe/lab8 ASP.NET/PAI_lab8/Suits/_PageStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U3VpdHNcX1BhZ2VTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

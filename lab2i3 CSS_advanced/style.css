@@ -1,0 +1,148 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: none;
+    text-decoration: none;
+    margin: none;
+    padding: none;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    flex-direction: column;
+}
+
+.articles{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+header{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    flex-grow: 1;
+}
+
+#titile_in_header{
+    margin-left: 15px ;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+nav{
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+a{
+    width: 75px;
+}
+
+.logo{
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+main{
+    padding: 15px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 100%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    text-align: justify;
+    
+}
+
+article > h3{
+    margin: 0;
+    text-align: center;
+    height: 50px;
+    width: 50%;
+    font-size: 1.5em;
+    display: flex;
+    align-self: flex-end;
+    border-left:2px solid black ;
+    border-bottom: 2px solid black;
+    background-color: lightgray;
+}
+
+article > p{
+    padding: 15px;
+    text-align: justify;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: lightgray;
+    border-top: 2px solid black;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.second_in_footer{
+    font-weight: bold;
+}
+
+.content{
+    flex: 1 0 auto
+}
+
+.footer{
+    flex-shrink: 0;
+}
+
+.hamburger{
+    display: none;
+    overflow: hidden;
+}
+
+@media all and (max-width: 900px){
+    .articles{
+        flex-wrap: wrap;
+    }
+    #titile_in_header{
+        display: none
+    }
+    nav{
+        display: none;
+    }
+    .hamburger{
+        
+        display: block;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
